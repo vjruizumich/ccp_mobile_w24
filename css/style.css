@@ -75,10 +75,11 @@ nav ul {
 
 nav ul li {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     padding: 15px 25px;
     font-size: 16px;
