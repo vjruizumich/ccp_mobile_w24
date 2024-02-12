@@ -24,19 +24,23 @@ video {
 /* font styles */
 h1 {
     border: 5px solid red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
 }
 
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
 }
 
 h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
 }
 
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
 }
 
 ul {
@@ -61,7 +65,7 @@ ul {
     width: auto;
 }
 
-
+/* allows background color to fill entire screen */
 body {
     margin: 0;
     padding: 0;
@@ -98,11 +102,15 @@ nav ul li a {
 nav ul li.active a {
     background-color: aqua;
     color: black;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 nav ul li a:hover {
     color: black;
     background-color: aqua;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 /* desktop nav styling */
@@ -117,4 +125,12 @@ nav ul li a:hover {
         display: inline-block;
         margin-bottom: 0px;
     }
+}
+
+/* disable motion for users with reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    img[src$=".gif"] {
+        display: none !important;
+    }
+
 }
