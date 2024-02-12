@@ -29,7 +29,6 @@ h1 {
 
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
 }
 
 h3 {
@@ -68,13 +67,14 @@ nav {
 }
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 10px 10px;
-    font-size: large;
+    display: block;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
@@ -93,4 +93,18 @@ nav ul li.active a {
 nav ul li a:hover {
     color: black;
     background-color: aqua;
+}
+
+/* desktop nav styling */
+
+@media only screen and (min-width: 601px) {
+    nav ul {
+        display: inline-block;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
 }
